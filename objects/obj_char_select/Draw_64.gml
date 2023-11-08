@@ -52,7 +52,4 @@ for (var i = 0; i < MAX_CHARS; i++)
 	}
 }
 
-if p1_ready and (p2_ready or com_ready)
-	draw_text(width, 300, "GET READY")
-
 draw_set_halign(fa_left)

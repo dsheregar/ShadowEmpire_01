@@ -15,10 +15,8 @@ function ControlAI(){
 		WalkForward()
 	else
 	{
-		//RandomStandingAttack()
 		SetAttack(ATK_LP)
-		wait(1000)
-		SetAttack(ATK_RP)
+		alarm[0] = 90
 	}
 	
 }

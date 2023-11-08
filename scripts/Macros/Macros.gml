@@ -15,6 +15,14 @@
 	#macro MAX_CHARS		12
 #endregion
 
+#region Backgrounds
+	#macro BGD_KAMBALA		0
+	#macro BGD_NEON			1
+	#macro BGD_MILITARY		2
+	
+	#macro MAX_BGD			3
+#endregion
+
 #region Game Type
 	#macro GAME_P1vAI		0
 	#macro GAME_P1vP2		1

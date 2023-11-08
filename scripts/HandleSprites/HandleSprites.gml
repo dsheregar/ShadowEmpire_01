@@ -158,7 +158,7 @@ function HandleSprites(){
 		break
 		
 		case CHAR_NATSU: 
-		sp_idle = Ranjit_Idle
+		sp_idle = Natsu_Idle
 		sp_forward = Ranjit_Forward
 		sp_backward = Ranjit_Backward
 		sp_fall = Ranjit_Idle

@@ -39,6 +39,7 @@
     {"name":"UI","order":4,"path":"folders/Sprites/UI.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Icon_Backgrounds","order":8,"path":"folders/Sprites/Icon_Backgrounds.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"NeonRooftops_Billboard","order":1,"path":"sprites/NeonRooftops_Billboard/NeonRooftops_Billboard.yy",},
@@ -115,6 +116,7 @@
     {"name":"Icon_Liz","order":7,"path":"sprites/Icon_Liz/Icon_Liz.yy",},
     {"name":"WalkForward","order":1,"path":"scripts/WalkForward/WalkForward.yy",},
     {"name":"kcp","order":1,"path":"scripts/kcp/kcp.yy",},
+    {"name":"Icon_OldBase","order":1,"path":"sprites/Icon_OldBase/Icon_OldBase.yy",},
     {"name":"obj_player","order":2,"path":"objects/obj_player/obj_player.yy",},
     {"name":"Ranjit_LowLeftKick","order":15,"path":"sprites/Ranjit_LowLeftKick/Ranjit_LowLeftKick.yy",},
     {"name":"gc","order":3,"path":"scripts/gc/gc.yy",},
@@ -182,6 +184,7 @@
     {"name":"MiyagiMagic","order":2,"path":"sounds/MiyagiMagic/MiyagiMagic.yy",},
     {"name":"Macros","order":2,"path":"scripts/Macros/Macros.yy",},
     {"name":"obj_militarysnow","order":5,"path":"objects/obj_militarysnow/obj_militarysnow.yy",},
+    {"name":"Icon_NeonRooftops","order":2,"path":"sprites/Icon_NeonRooftops/Icon_NeonRooftops.yy",},
     {"name":"Portrait_Liz","order":7,"path":"sprites/Portrait_Liz/Portrait_Liz.yy",},
     {"name":"obj_solid","order":1,"path":"objects/obj_solid/obj_solid.yy",},
     {"name":"Ranjit_LowRightPunch","order":14,"path":"sprites/Ranjit_LowRightPunch/Ranjit_LowRightPunch.yy",},
