@@ -205,6 +205,7 @@
     {"id":{"name":"kc","path":"scripts/kc/kc.yy",},},
     {"id":{"name":"Ranjit_HurtMid","path":"sprites/Ranjit_HurtMid/Ranjit_HurtMid.yy",},},
     {"id":{"name":"Ranjit_HurtHead","path":"sprites/Ranjit_HurtHead/Ranjit_HurtHead.yy",},},
+    {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"Icon_Leon","path":"sprites/Icon_Leon/Icon_Leon.yy",},},
     {"id":{"name":"Ranjit_LowLeftPunch","path":"sprites/Ranjit_LowLeftPunch/Ranjit_LowLeftPunch.yy",},},
     {"id":{"name":"Ranjit_RightPunch","path":"sprites/Ranjit_RightPunch/Ranjit_RightPunch.yy",},},
@@ -234,6 +235,7 @@
     {"id":{"name":"obj_militarysnow","path":"objects/obj_militarysnow/obj_militarysnow.yy",},},
     {"id":{"name":"Icon_NeonRooftops","path":"sprites/Icon_NeonRooftops/Icon_NeonRooftops.yy",},},
     {"id":{"name":"Portrait_Liz","path":"sprites/Portrait_Liz/Portrait_Liz.yy",},},
+    {"id":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},},
     {"id":{"name":"Ranjit_LowRightPunch","path":"sprites/Ranjit_LowRightPunch/Ranjit_LowRightPunch.yy",},},
     {"id":{"name":"gcp","path":"scripts/gcp/gcp.yy",},},
@@ -248,6 +250,7 @@
     {"id":{"name":"rm_kambalaBackground","path":"rooms/rm_kambalaBackground/rm_kambalaBackground.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"roomId":{"name":"rm_char_select","path":"rooms/rm_char_select/rm_char_select.yy",},},
     {"roomId":{"name":"rm_background_select","path":"rooms/rm_background_select/rm_background_select.yy",},},

@@ -1,15 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (kcp(ord("W")) || gamepad_button_check_pressed(0, gp_padu))
+if (kcp(ord("W")) || gamepad_button_check_pressed(global.player1, gp_padu))
 	cur_index --
 
-if (kcp(ord("S")) || gamepad_button_check_pressed(0,gp_padd))
+if (kcp(ord("S")) || gamepad_button_check_pressed(global.player1,gp_padd))
 	cur_index ++
 
 cur_index = clamp(cur_index, 0, array_length_1d(menu))
 
-if (kcp(ord("J")) || gamepad_button_check_pressed(0,gp_face1))
+if (kcp(ord("J")) || gamepad_button_check_pressed(global.player1,gp_face1))
 {
 	switch (cur_index)
 	{

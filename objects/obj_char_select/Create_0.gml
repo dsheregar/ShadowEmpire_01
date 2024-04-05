@@ -55,3 +55,5 @@ com_ready = false
 global.p1_char = CHAR_RANJIT
 global.p2_char = CHAR_RANJIT
 global.ai_char = CHAR_RANJIT
+
+p2_controller_detected = false

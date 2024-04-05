@@ -1,3 +1,10 @@
+#region Players
+	#macro CONTROLLER1		0
+	#macro CONTROLLER2		1
+	#macro CONTROLLER3		2
+	#macro CONTROLLER4		3
+#endregion
+
 #region //Characters
 	#macro CHAR_RANJIT		0
 	#macro CHAR_MIGUEL		1

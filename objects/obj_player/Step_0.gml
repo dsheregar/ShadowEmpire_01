@@ -4,16 +4,16 @@
 
 //If the controller ID for this player is P1, then use the WASD keys to move
 //NOTE: ALLOW GAMEPAD CODE HERE
-right = (controller == CONT_P1)?ord("D"):vk_right
-left = (controller == CONT_P1)?ord("A"):vk_left
-up = (controller == CONT_P1)?ord("W"):vk_up
-down = (controller == CONT_P1)?ord("S"):vk_down
+right = (controller == global.player1)?ord("D"):vk_right
+left = (controller == global.player1)?ord("A"):vk_left
+up = (controller == global.player1)?ord("W"):vk_up
+down = (controller == global.player1)?ord("S"):vk_down
 
 
-lp = (controller == CONT_P1)?ord("U"):vk_numpad4
-rp = (controller == CONT_P1)?ord("I"):vk_numpad1
-lk = (controller == CONT_P1)?ord("J"):vk_numpad5
-rk = (controller == CONT_P1)?ord("K"):vk_numpad2
+lp = (controller == global.player1)?ord("U"):vk_numpad4
+rp = (controller == global.player1)?ord("I"):vk_numpad1
+lk = (controller == global.player1)?ord("J"):vk_numpad5
+rk = (controller == global.player1)?ord("K"):vk_numpad2
 
 #endregion
 

@@ -1,14 +1,14 @@
 /// @description Variables
 
-character = CHAR_RANJIT	//Default character sprite for P1
-controller = CONT_P2	//Controller ID for P1
-state = STATE_FREE		//State of character (REFER TO THE SCRIPT "AnimationControl")
+character = CHAR_RANJIT			//Default character sprite for P1
+controller = global.player2		//Controller ID for P1
+state = STATE_FREE				//State of character (REFER TO THE SCRIPT "AnimationControl")
 dmg_state = EFF_NONE
 where_hurt = MID
 
-hspd = 0				//Default horizontal speed for all
-vspd = 0				//Default vertical speed for all
-grv = GRAVITY_FORCE		//Default gravity speed for all (REFER TO THE SCRIPT "Macros")
+hspd = 0						//Default horizontal speed for all
+vspd = 0						//Default vertical speed for all
+grv = GRAVITY_FORCE				//Default gravity speed for all (REFER TO THE SCRIPT "Macros")
 
 landed = false
 duck = false
