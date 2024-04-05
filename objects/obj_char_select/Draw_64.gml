@@ -10,11 +10,7 @@ draw_text(width , 350, "Character select")
 var second_char = (global.game_type == GAME_P1vP2)?p2_index:com_index
 
 draw_sprite_ext(portraits[p1_index], 0, 0, 0, 1, 1, 0, c_white, 1)
-
-if (!p2_controller_detected)
-	draw_text(width + 250 , 350, "PRESS START")
-else
-	draw_sprite_ext(portraits[second_char], 0, width*2, 0, -1, 1, 0, c_white, 1)
+draw_sprite_ext(portraits[second_char], 0, width*2, 0, -1, 1, 0, c_white, 1)
 
 for (var i = 0; i < MAX_CHARS; i++)
 {

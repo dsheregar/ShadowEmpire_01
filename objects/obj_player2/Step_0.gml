@@ -24,7 +24,10 @@ RenderHurtboxes()
 HitManager()
 
 //Character Control
-CharacterControl()
+if controller == CONT_P2
+	CharacterControl()
+else
+	ControlAI()	
 
 //Animation Control
 AnimationControl()

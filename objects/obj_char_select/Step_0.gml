@@ -5,11 +5,9 @@ p1_index = clamp(p1_index, 0, MAX_CHARS - 1)
 p2_index = clamp(p2_index, 0, MAX_CHARS - 1)
 com_index = clamp(com_index, 0, MAX_CHARS - 1)
 
-
-
 if alarm[0] < 0
 {
-	if (kcp(ord("D")) || gamepad_button_check_pressed(global.player1,gp_padr))
+	if (kcp(ord("D")) || gamepad_button_check_pressed(0,gp_padr))
 	{
 		if !p1_ready
 		{
@@ -26,7 +24,7 @@ if alarm[0] < 0
 				com_index++
 		}
 	}
-	if (kcp(ord("A")) || gamepad_button_check_pressed(global.player1,gp_padl))
+	if (kcp(ord("A")) || gamepad_button_check_pressed(0,gp_padl))
 	{
 		if !p1_ready
 		{
@@ -43,7 +41,7 @@ if alarm[0] < 0
 				com_index--
 		}
 	}
-	if (kcp(ord("W")) || gamepad_button_check_pressed(global.player1,gp_padu))
+	if (kcp(ord("W")) || gamepad_button_check_pressed(0,gp_padu))
 	{
 		if !p1_ready
 		{
@@ -60,7 +58,7 @@ if alarm[0] < 0
 				com_index -= 6
 		}
 	}
-	if (kcp(ord("S")) || gamepad_button_check_pressed(global.player1,gp_padd))
+	if (kcp(ord("S")) || gamepad_button_check_pressed(0,gp_padd))
 	{
 		if !p1_ready
 		{
@@ -77,7 +75,7 @@ if alarm[0] < 0
 				com_index += 6
 		}
 	}
-	if kcp(ord("J")) || gamepad_button_check_pressed(global.player1,gp_face1)
+	if kcp(ord("J")) || gamepad_button_check_pressed(0,gp_face1)
 	{
 		if global.game_type == GAME_P1vAI
 		{
@@ -104,61 +102,44 @@ if alarm[0] < 0
 
 if global.game_type = GAME_P1vP2
 {
-	if (gamepad_button_check_pressed(0, gp_start)) {
-	    global.player2 = CONTROLLER1;
-		p2_controller_detected = true
-	} else if (gamepad_button_check_pressed(1, gp_start)) {
-	    global.player2 = CONTROLLER2;
-		p2_controller_detected = true
-	} else if (gamepad_button_check_pressed(2, gp_start)) {
-	    global.player2 = CONTROLLER3;
-		p2_controller_detected = true
-	} else if (gamepad_button_check_pressed(3, gp_start)) {
-	    global.player2 = CONTROLLER4;
-		p2_controller_detected = true
-	}
-	
-	if p2_controller_detected
+	if !p2_ready
 	{
-		if !p2_ready
+		if (kcp(vk_right) || gamepad_button_check_pressed(1,gp_padr))
 		{
-			if (kcp(vk_right) || gamepad_button_check_pressed(global.player2,gp_padr))
-			{
-				if p2_index == 11
-					p2_index = p2_index
-				else
-					p2_index++
-			}
+			if p2_index == 11
+				p2_index = p2_index
+			else
+				p2_index++
+		}
 
-			if (kcp(vk_left) || gamepad_button_check_pressed(global.player2,gp_padl))
-			{
-				if p2_index == 0
-					p2_index = p2_index
-				else
-					p2_index--
-			}
+		if (kcp(vk_left) || gamepad_button_check_pressed(1,gp_padl))
+		{
+			if p2_index == 0
+				p2_index = p2_index
+			else
+				p2_index--
+		}
 		
-			if (kcp(vk_up) || gamepad_button_check_pressed(global.player2,gp_padu))
-			{
-				if p2_index < 6
-					p2_index = p2_index
-				else
-					p2_index -= 6
-			}
+		if (kcp(vk_up) || gamepad_button_check_pressed(1,gp_padu))
+		{
+			if p2_index < 6
+				p2_index = p2_index
+			else
+				p2_index -= 6
+		}
 
-			if (kcp(vk_down) || gamepad_button_check_pressed(global.player2,gp_padd))
-			{
-				if p2_index >= 6
-					p2_index = p2_index
-				else
-					p2_index += 6
-			}
+		if (kcp(vk_down) || gamepad_button_check_pressed(1,gp_padd))
+		{
+			if p2_index >= 6
+				p2_index = p2_index
+			else
+				p2_index += 6
+		}
 
-			if (kcp(vk_numpad1) || gamepad_button_check_pressed(global.player2,gp_face1))
-			{
-				p2_ready = true
-				global.p2_char = p2_index
-			}
+		if (kcp(vk_numpad1) || gamepad_button_check_pressed(1,gp_face1))
+		{
+			p2_ready = true
+			global.p2_char = p2_index
 		}
 	}
 }
