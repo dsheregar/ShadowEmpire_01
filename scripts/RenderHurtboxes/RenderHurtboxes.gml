@@ -652,37 +652,11 @@ function RenderHurtboxes(){
 			break
 			
 			case STATE_SPRINTING:
-				head.image_xscale = 30 * sign(image_xscale)
-				head.image_yscale = 18
-				head.xOffset = -5 * sign(image_xscale)
-				head.yOffset = -168
 				
-				body.image_xscale = 50 * sign(image_xscale)
-				body.image_yscale = 40
-				body.xOffset = -20 * sign(image_xscale)
-				body.yOffset = -150
-				
-				low.image_xscale = 45 * sign(image_xscale)
-				low.image_yscale = 60
-				low.xOffset = -10 * sign(image_xscale)
-				low.yOffset = -110
 			break
 			
 			case STATE_STEPBACK:
-				head.image_xscale = 28 * sign(image_xscale)
-				head.image_yscale = 23
-				head.xOffset = -30 * sign(image_xscale)
-				head.yOffset = -160
 				
-				body.image_xscale = 60 * sign(image_xscale)
-				body.image_yscale = 57
-				body.xOffset = -40 * sign(image_xscale)
-				body.yOffset = -137
-				
-				low.image_xscale = 50 * sign(image_xscale)
-				low.image_yscale = 60
-				low.xOffset = 1 * sign(image_xscale)
-				low.yOffset = -80
 			break
 			
 			case STATE_BLOCK:
@@ -751,17 +725,17 @@ function RenderHurtboxes(){
 					}
 					else
 					{
-						head.image_xscale = 20 * sign(image_xscale)
+						head.image_xscale = 25 * sign(image_xscale)
 						head.image_yscale = 20
-						head.xOffset = -8 * sign(image_xscale)
+						head.xOffset = -7 * sign(image_xscale)
 						head.yOffset = -110
 				
-						body.image_xscale = 30 * sign(image_xscale)
-						body.image_yscale = 50
+						body.image_xscale = 35 * sign(image_xscale)
+						body.image_yscale = 25
 						body.xOffset = -7 * sign(image_xscale)
-						body.yOffset = -105
+						body.yOffset = -95
 				
-						low.image_xscale = 30 * sign(image_xscale)
+						low.image_xscale = 40 * sign(image_xscale)
 						low.image_yscale = 50
 						low.xOffset = 1 * sign(image_xscale)
 						low.yOffset = -70
@@ -774,42 +748,375 @@ function RenderHurtboxes(){
 			break
 			
 			case STATE_ATTACK:
-				head.image_xscale = 20 * sign(image_xscale)
-				head.image_yscale = 25
-				head.xOffset = -5 * sign(image_xscale)
-				head.yOffset = -158
+				switch(atk_type)
+				{
+					case ATK_LP:
+						head.image_xscale = 30 * sign(image_xscale)
+						head.image_yscale = 35
+						head.xOffset = -15 * sign(image_xscale)
+						head.yOffset = -165
 				
-				body.image_xscale = 30 * sign(image_xscale)
-				body.image_yscale = 50
-				body.xOffset = -8 * sign(image_xscale)
-				body.yOffset = -135
+						body.image_xscale = 45 * sign(image_xscale)
+						body.image_yscale = 53
+						body.xOffset = -20 * sign(image_xscale)
+						body.yOffset = -138
 				
-				low.image_xscale = 40 * sign(image_xscale)
-				low.image_yscale = 50
-				low.xOffset = 0 * sign(image_xscale)
-				low.yOffset = -85
+						low.image_xscale = 50 * sign(image_xscale)
+						low.image_yscale = 60
+						low.xOffset = -5 * sign(image_xscale)
+						low.yOffset = -85
+					break
+					case ATK_RP:
+						head.image_xscale = 27 * sign(image_xscale)
+						head.image_yscale = 27
+						head.xOffset = -8 * sign(image_xscale)
+						head.yOffset = -162
+				
+						body.image_xscale = 55 * sign(image_xscale)
+						body.image_yscale = 55
+						body.xOffset = -20 * sign(image_xscale)
+						body.yOffset = -140
+				
+						low.image_xscale = 50 * sign(image_xscale)
+						low.image_yscale = 60
+						low.xOffset = -5 * sign(image_xscale)
+						low.yOffset = -85
+					break
+					case ATK_LK:
+						head.image_xscale = 27 * sign(image_xscale)
+						head.image_yscale = 20
+						head.xOffset = -15 * sign(image_xscale)
+						head.yOffset = -165
+				
+						body.image_xscale = 72 * sign(image_xscale)
+						body.image_yscale = 45
+						body.xOffset = -35 * sign(image_xscale)
+						body.yOffset = -145
+				
+						low.image_xscale = 100 * sign(image_xscale)
+						low.image_yscale = 57
+						low.xOffset = -7 * sign(image_xscale)
+						low.yOffset = -127
+					break
+					case ATK_RK:
+						head.image_xscale = 27 * sign(image_xscale)
+						head.image_yscale = 20
+						head.xOffset = -17 * sign(image_xscale)
+						head.yOffset = -165
+				
+						body.image_xscale = 72 * sign(image_xscale)
+						body.image_yscale = 45
+						body.xOffset = -36 * sign(image_xscale)
+						body.yOffset = -145
+				
+						low.image_xscale = 90 * sign(image_xscale)
+						low.image_yscale = 45
+						low.xOffset = -10 * sign(image_xscale)
+						low.yOffset = -141
+						low.image_angle = 10 * sign(image_xscale)
+					break
+				}
+			break
+			
+			case STATE_ATTACK_DUCK:
+				switch(atk_type)
+				{
+					case ATK_LP:
+						head.image_xscale = 25 * sign(image_xscale)
+						head.image_yscale = 18
+						head.xOffset = 33 * sign(image_xscale)
+						head.yOffset = -60
+				
+						body.image_xscale = 75 * sign(image_xscale)
+						body.image_yscale = 30
+						body.xOffset = 0 * sign(image_xscale)
+						body.yOffset = -50
+				
+						low.image_xscale = 75 * sign(image_xscale)
+						low.image_yscale = 47
+						low.xOffset = -75 * sign(image_xscale)
+						low.yOffset = -67
+					break
+					case ATK_RP:
+						head.image_xscale = 25 * sign(image_xscale)
+						head.image_yscale = 18
+						head.xOffset = -58 * sign(image_xscale)
+						head.yOffset = -60
+				
+						body.image_xscale = 75 * sign(image_xscale)
+						body.image_yscale = 30
+						body.xOffset = -75 * sign(image_xscale)
+						body.yOffset = -50
+				
+						low.image_xscale = 75 * sign(image_xscale)
+						low.image_yscale = 47
+						low.xOffset = 0 * sign(image_xscale)
+						low.yOffset = -67
+					break
+					case ATK_LK:
+						head.image_xscale = 27 * sign(image_xscale)
+						head.image_yscale = 20
+						head.xOffset = 2 * sign(image_xscale)
+						head.yOffset = -135
+				
+						body.image_xscale = 80 * sign(image_xscale)
+						body.image_yscale = 60
+						body.xOffset = -35 * sign(image_xscale)
+						body.yOffset = -120
+				
+						low.image_xscale = 135 * sign(image_xscale)
+						low.image_yscale = 45
+						low.xOffset = -65 * sign(image_xscale)
+						low.yOffset = -65
+					break
+					case ATK_RK:
+						head.image_xscale = 27 * sign(image_xscale)
+						head.image_yscale = 20
+						head.xOffset = 2 * sign(image_xscale)
+						head.yOffset = -135
+				
+						body.image_xscale = 80 * sign(image_xscale)
+						body.image_yscale = 60
+						body.xOffset = -35 * sign(image_xscale)
+						body.yOffset = -120
+				
+						low.image_xscale = 135 * sign(image_xscale)
+						low.image_yscale = 45
+						low.xOffset = -65 * sign(image_xscale)
+						low.yOffset = -65
+					break
+				}
+			break
+			
+			case STATE_THROW:
+				switch(throw_dir)
+				{
+					case THROW_FORWARD:
+						if (image_index > 3 and image_index < 8)
+						{
+							head.image_xscale = 30 * sign(image_xscale)
+							head.image_yscale = 20
+							head.xOffset = -24 * sign(image_xscale)
+							head.yOffset = -195
+				
+							body.image_xscale = 72 * sign(image_xscale)
+							body.image_yscale = 55
+							body.xOffset = -30 * sign(image_xscale)
+							body.yOffset = -175
+				
+							low.image_xscale = 110 * sign(image_xscale)
+							low.image_yscale = 42
+							low.xOffset = -10 * sign(image_xscale)
+							low.yOffset = -120
+
+						}
+						else
+						{
+							head.image_xscale = 30 * sign(image_xscale)
+							head.image_yscale = 20
+							head.xOffset = -17 * sign(image_xscale)
+							head.yOffset = -165
+				
+							body.image_xscale = 70 * sign(image_xscale)
+							body.image_yscale = 45
+							body.xOffset = -33 * sign(image_xscale)
+							body.yOffset = -145
+				
+							low.image_xscale = 90 * sign(image_xscale)
+							low.image_yscale = 80
+							low.xOffset = -33 * sign(image_xscale)
+							low.yOffset = -100
+						}
+					break
+					
+					case THROW_BACKWARD:
+						if (image_index < 2)
+						{
+							head.image_xscale = 30 * sign(image_xscale)
+							head.image_yscale = 18
+							head.xOffset = -3 * sign(image_xscale)
+							head.yOffset = -140
+				
+							body.image_xscale = 50 * sign(image_xscale)
+							body.image_yscale = 45
+							body.xOffset = -15 * sign(image_xscale)
+							body.yOffset = -125
+				
+							low.image_xscale = 65 * sign(image_xscale)
+							low.image_yscale = 60
+							low.xOffset = -17 * sign(image_xscale)
+							low.yOffset = -80
+						}
+						else if (image_index > 1 and image_index < 4)
+						{
+							head.image_xscale = 30 * sign(image_xscale)
+							head.image_yscale = 18
+							head.xOffset = -43 * sign(image_xscale)
+							head.yOffset = -97
+							head.image_angle = 90 * sign(image_xscale)
+				
+							body.image_xscale = 50 * sign(image_xscale)
+							body.image_yscale = 45
+							body.xOffset = -25 * sign(image_xscale)
+							body.yOffset = -125
+				
+							low.image_xscale = 40 * sign(image_xscale)
+							low.image_yscale = 60
+							low.xOffset = -17 * sign(image_xscale)
+							low.yOffset = -160
+						}
+						else if (image_index > 3 and image_index < 6)
+						{
+							head.image_xscale = 30 * sign(image_xscale)
+							head.image_yscale = 30
+							head.xOffset = -60 * sign(image_xscale)
+							head.yOffset = -87
+							head.image_angle = 90 * sign(image_xscale)
+				
+							body.image_xscale = 50 * sign(image_xscale)
+							body.image_yscale = 45
+							body.xOffset = -35 * sign(image_xscale)
+							body.yOffset = -125
+				
+							low.image_xscale = 75 * sign(image_xscale)
+							low.image_yscale = 70
+							low.xOffset = 0 * sign(image_xscale)
+							low.yOffset = -170
+						}
+						else if (image_index > 5 and image_index < 9)
+						{
+							head.image_xscale = 30 * sign(image_xscale)
+							head.image_yscale = 30
+							head.xOffset = 15 * sign(image_xscale)
+							head.yOffset = -80
+				
+							body.image_xscale = 50 * sign(image_xscale)
+							body.image_yscale = 45
+							body.xOffset = -5 * sign(image_xscale)
+							body.yOffset = -125
+				
+							low.image_xscale = 95 * sign(image_xscale)
+							low.image_yscale = 70
+							low.xOffset = -73 * sign(image_xscale)
+							low.yOffset = -170
+						}
+						else
+						{
+							head.image_xscale = 27 * sign(image_xscale)
+							head.image_yscale = 18
+							head.xOffset = 10 * sign(image_xscale)
+							head.yOffset = -130
+				
+							body.image_xscale = 55 * sign(image_xscale)
+							body.image_yscale = 20
+							body.xOffset = -5 * sign(image_xscale)
+							body.yOffset = -115
+				
+							low.image_xscale = 60 * sign(image_xscale)
+							low.image_yscale = 70
+							low.xOffset = -5 * sign(image_xscale)
+							low.yOffset = -95
+						}
+					break
+				}
 			break
 			
 			case STATE_HURT:
 				switch(dmg_state)
 				{
+					case EFF_NONE:
+						if duck
+						{
+							head.image_xscale = 25 * sign(image_xscale)
+							head.image_yscale = 20
+							head.xOffset = -35 * sign(image_xscale)
+							head.yOffset = -110
+				
+							body.image_xscale = 55 * sign(image_xscale)
+							body.image_yscale = 25
+							body.xOffset = -45 * sign(image_xscale)
+							body.yOffset = -95
+				
+							low.image_xscale = 40 * sign(image_xscale)
+							low.image_yscale = 50
+							low.xOffset = 1 * sign(image_xscale)
+							low.yOffset = -70
+						}
+						else
+						{
+							switch(where_hurt)
+							{
+								case HEAD:
+									head.image_xscale = 30 * sign(image_xscale)
+									head.image_yscale = 20
+									head.xOffset = -32 * sign(image_xscale)
+									head.yOffset = -160
+				
+									body.image_xscale = 60 * sign(image_xscale)
+									body.image_yscale = 55
+									body.xOffset = -32 * sign(image_xscale)
+									body.yOffset = -140
+				
+									low.image_xscale = 50 * sign(image_xscale)
+									low.image_yscale = 60
+									low.xOffset = 0 * sign(image_xscale)
+									low.yOffset = -85
+								break
+								
+								case MID:
+									head.image_xscale = 32 * sign(image_xscale)
+									head.image_yscale = 25
+									head.xOffset = -20 * sign(image_xscale)
+									head.yOffset = -165
+				
+									body.image_xscale = 60 * sign(image_xscale)
+									body.image_yscale = 55
+									body.xOffset = -32 * sign(image_xscale)
+									body.yOffset = -140
+				
+									low.image_xscale = 50 * sign(image_xscale)
+									low.image_yscale = 60
+									low.xOffset = -10 * sign(image_xscale)
+									low.yOffset = -85
+								break
+								
+								case LOW:
+									head.image_xscale = 30 * sign(image_xscale)
+									head.image_yscale = 20
+									head.xOffset = -18 * sign(image_xscale)
+									head.yOffset = -160
+				
+									body.image_xscale = 60 * sign(image_xscale)
+									body.image_yscale = 55
+									body.xOffset = -32 * sign(image_xscale)
+									body.yOffset = -140
+				
+									low.image_xscale = 50 * sign(image_xscale)
+									low.image_yscale = 60
+									low.xOffset = 0 * sign(image_xscale)
+									low.yOffset = -85
+								break
+							}
+						}
+					break
+					
 					case EFF_KNOCKUP:
 						if image_index < 9
 						{
 							head.image_xscale = 25 * -sign(image_xscale)
 							head.image_yscale = 25
-							head.xOffset = 45 * -sign(image_xscale)
-							head.yOffset = -120
+							head.xOffset = 50 * -sign(image_xscale)
+							head.yOffset = -150
 				
-							body.image_xscale = 40 * -sign(image_xscale)
+							body.image_xscale = 55 * -sign(image_xscale)
 							body.image_yscale = 30
-							body.xOffset = 5 * -sign(image_xscale)
-							body.yOffset = -120
+							body.xOffset = 15 * -sign(image_xscale)
+							body.yOffset = -140
 				
-							low.image_xscale = 50 * -sign(image_xscale)
-							low.image_yscale = 30
+							low.image_xscale = 70 * -sign(image_xscale)
+							low.image_yscale = 50
 							low.xOffset = -50 * -sign(image_xscale)
-							low.yOffset = -115
+							low.yOffset = -135
 						} else if ((image_index > 9) && (image_index < 18))
 						{
 							head.image_xscale = 25 * -sign(image_xscale)
@@ -830,8 +1137,8 @@ function RenderHurtboxes(){
 						{
 							head.image_xscale = 20 * -sign(image_xscale)
 							head.image_yscale = 20
-							head.xOffset = -12 * -sign(image_xscale)
-							head.yOffset = -140
+							head.xOffset = -17 * -sign(image_xscale)
+							head.yOffset = -120
 				
 							body.image_xscale = 60 * -sign(image_xscale)
 							body.image_yscale = 50
@@ -850,18 +1157,18 @@ function RenderHurtboxes(){
 						{
 							head.image_xscale = 25 * -sign(image_xscale)
 							head.image_yscale = 25
-							head.xOffset = 45 * -sign(image_xscale)
-							head.yOffset = -120
+							head.xOffset = 50 * -sign(image_xscale)
+							head.yOffset = -150
 				
-							body.image_xscale = 40 * -sign(image_xscale)
+							body.image_xscale = 55 * -sign(image_xscale)
 							body.image_yscale = 30
-							body.xOffset = 5 * -sign(image_xscale)
-							body.yOffset = -120
+							body.xOffset = 15 * -sign(image_xscale)
+							body.yOffset = -140
 				
-							low.image_xscale = 50 * -sign(image_xscale)
-							low.image_yscale = 30
+							low.image_xscale = 70 * -sign(image_xscale)
+							low.image_yscale = 50
 							low.xOffset = -50 * -sign(image_xscale)
-							low.yOffset = -115
+							low.yOffset = -135
 						} else if ((image_index > 9) && (image_index < 18))
 						{
 							head.image_xscale = 25 * -sign(image_xscale)
@@ -882,8 +1189,8 @@ function RenderHurtboxes(){
 						{
 							head.image_xscale = 20 * -sign(image_xscale)
 							head.image_yscale = 20
-							head.xOffset = -12 * -sign(image_xscale)
-							head.yOffset = -140
+							head.xOffset = -17 * -sign(image_xscale)
+							head.yOffset = -120
 				
 							body.image_xscale = 60 * -sign(image_xscale)
 							body.image_yscale = 50
@@ -896,6 +1203,127 @@ function RenderHurtboxes(){
 							low.yOffset = -55
 						}
 					break
+					
+					case EFF_PUSHBACK:
+						if duck
+						{
+							head.image_xscale = 25 * sign(image_xscale)
+							head.image_yscale = 20
+							head.xOffset = -35 * sign(image_xscale)
+							head.yOffset = -110
+				
+							body.image_xscale = 55 * sign(image_xscale)
+							body.image_yscale = 25
+							body.xOffset = -45 * sign(image_xscale)
+							body.yOffset = -95
+				
+							low.image_xscale = 40 * sign(image_xscale)
+							low.image_yscale = 50
+							low.xOffset = 1 * sign(image_xscale)
+							low.yOffset = -70
+						}
+						else
+						{
+							switch(where_hurt)
+							{
+								case HEAD:
+									head.image_xscale = 30 * sign(image_xscale)
+									head.image_yscale = 20
+									head.xOffset = -32 * sign(image_xscale)
+									head.yOffset = -160
+				
+									body.image_xscale = 60 * sign(image_xscale)
+									body.image_yscale = 55
+									body.xOffset = -32 * sign(image_xscale)
+									body.yOffset = -140
+				
+									low.image_xscale = 50 * sign(image_xscale)
+									low.image_yscale = 60
+									low.xOffset = 0 * sign(image_xscale)
+									low.yOffset = -85
+								break
+								
+								case MID:
+									head.image_xscale = 32 * sign(image_xscale)
+									head.image_yscale = 25
+									head.xOffset = -20 * sign(image_xscale)
+									head.yOffset = -165
+				
+									body.image_xscale = 60 * sign(image_xscale)
+									body.image_yscale = 55
+									body.xOffset = -32 * sign(image_xscale)
+									body.yOffset = -140
+				
+									low.image_xscale = 50 * sign(image_xscale)
+									low.image_yscale = 60
+									low.xOffset = -10 * sign(image_xscale)
+									low.yOffset = -85
+								break
+								
+								case LOW:
+									head.image_xscale = 30 * sign(image_xscale)
+									head.image_yscale = 20
+									head.xOffset = -18 * sign(image_xscale)
+									head.yOffset = -160
+				
+									body.image_xscale = 60 * sign(image_xscale)
+									body.image_yscale = 55
+									body.xOffset = -32 * sign(image_xscale)
+									body.yOffset = -140
+				
+									low.image_xscale = 50 * sign(image_xscale)
+									low.image_yscale = 60
+									low.xOffset = 0 * sign(image_xscale)
+									low.yOffset = -85
+								break
+							}
+						}
+					break
+				}
+			break
+			
+			case STATE_SPRINTING:
+				
+			break
+			
+			case STATE_STEPBACK:
+				
+			break
+			
+			case STATE_BLOCK:
+				if !duck
+				{
+					head.image_xscale = 58 * sign(image_xscale)
+					head.image_yscale = 20
+					head.xOffset = -25 * sign(image_xscale)
+					head.yOffset = -165
+				
+					body.image_xscale = 85 * sign(image_xscale)
+					body.image_yscale = 45
+					body.xOffset = -35 * sign(image_xscale)
+					body.yOffset = -145
+				
+					low.image_xscale = 95 * sign(image_xscale)
+					low.image_yscale = 75
+					low.xOffset = -38 * sign(image_xscale)
+					low.yOffset = -100
+				}
+				else
+				{
+					head.image_xscale = 25 * sign(image_xscale)
+					head.image_yscale = 20
+					head.xOffset = -7 * sign(image_xscale)
+					head.yOffset = -110
+				
+					body.image_xscale = 35 * sign(image_xscale)
+					body.image_yscale = 25
+					body.xOffset = -7 * sign(image_xscale)
+					body.yOffset = -95
+				
+					low.image_xscale = 40 * sign(image_xscale)
+					low.image_yscale = 50
+					low.xOffset = 1 * sign(image_xscale)
+					low.yOffset = -70
 				}
 			break
 		}

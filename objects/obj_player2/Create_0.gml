@@ -27,4 +27,4 @@ hit_base_id = -1
 last_hit_id = -2
 
 //Stats
-hp = 200
+hp = 100

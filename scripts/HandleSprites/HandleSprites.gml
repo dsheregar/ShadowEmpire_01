@@ -49,7 +49,7 @@ function HandleSprites(){
 		sp_backstep = Miguel_Backstep
 		
 		sp_throw = [Miguel_ThrowForward, Miguel_ThrowBackward]
-		throw_indexes = [[2], [5]]
+		throw_indexes = [[4], [5]]
 		
 		sp_hurt_u = Miguel_Idle
 		sp_ko = Miguel_Knockout
@@ -126,13 +126,13 @@ function HandleSprites(){
 		
 		break
 		
-		case CHAR_RANIA: 
-		sp_idle = Rania_Idle
-		sp_forward = Ranjit_Forward
-		sp_backward = Ranjit_Backward
-		sp_fall = Rania_Idle
-		sp_jump = Ranjit_Idle
-		sp_duck = Ranjit_Duck
+		case CHAR_LIZ: 
+		sp_idle = Liz_Idle
+		sp_forward = Liz_Forward
+		sp_backward = Liz_Backward
+		sp_fall = Liz_Idle
+		sp_jump = Liz_Idle
+		sp_duck = Liz_Duck
 		sp_block = Ranjit_Block
 		sp_block_duck = Ranjit_BlockDuck
 		sp_sprinting = Ranjit_Sprinting
@@ -144,10 +144,10 @@ function HandleSprites(){
 		sp_hurt_u = Ranjit_HurtHead
 		sp_ko = Ranjit_Knockout
 		
-		sp_attack = [Ranjit_LeftPunch, Ranjit_RightPunch, Ranjit_LeftKick, Ranjit_RightKick]
-		attack_indexes = [[1], [1], [5], [2]]
-		sp_attack_duck = [Ranjit_LowLeftPunch, Ranjit_LowRightPunch, Ranjit_LowLeftKick, Ranjit_LowRightKick]
-		attack_duck_indexes = [[1], [1], [2], [2]]
+		sp_attack = [Liz_LeftPunch, Liz_RightPunch, Liz_LeftKick, Liz_RightKick]
+		attack_indexes = [[2], [3], [3], [6, 15]]
+		sp_attack_duck = [Liz_LowLeftPunch, Liz_LowRightPunch, Liz_LowLeftKick, Liz_LowRightKick]
+		attack_duck_indexes = [[2], [3, 11], [2], [2]]
 		
 		sp_hurt = [Ranjit_HurtHead, Ranjit_HurtMid, Ranjit_HurtLow]
 		sp_hurt_duck = Ranjit_HurtDuck
@@ -219,12 +219,12 @@ function HandleSprites(){
 		
 		break
 		
-		case CHAR_LIZ: 
-		sp_idle = Liz_Idle
-		sp_forward = Liz_Forward
-		sp_backward = Liz_Backward
-		sp_fall = Liz_Idle
-		sp_jump = Liz_Idle
+		case CHAR_RANIA: 
+		sp_idle = Rania_Idle
+		sp_forward = Ranjit_Forward
+		sp_backward = Ranjit_Backward
+		sp_fall = Rania_Idle
+		sp_jump = Ranjit_Idle
 		sp_duck = Ranjit_Duck
 		sp_block = Ranjit_Block
 		sp_block_duck = Ranjit_BlockDuck
@@ -237,7 +237,7 @@ function HandleSprites(){
 		sp_hurt_u = Ranjit_HurtHead
 		sp_ko = Ranjit_Knockout
 		
-		sp_attack = [Liz_LeftPunch, Ranjit_RightPunch, Ranjit_LeftKick, Ranjit_RightKick]
+		sp_attack = [Ranjit_LeftPunch, Ranjit_RightPunch, Ranjit_LeftKick, Ranjit_RightKick]
 		attack_indexes = [[1], [1], [5], [2]]
 		sp_attack_duck = [Ranjit_LowLeftPunch, Ranjit_LowRightPunch, Ranjit_LowLeftKick, Ranjit_LowRightKick]
 		attack_duck_indexes = [[1], [1], [2], [2]]

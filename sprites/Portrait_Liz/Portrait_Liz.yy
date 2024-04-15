@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Portrait_Liz",
   "bbox_bottom": 849,
-  "bbox_left": 121,
-  "bbox_right": 496,
+  "bbox_left": 58,
+  "bbox_right": 467,
   "bbox_top": 137,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"61b883e1-39fc-4f2c-a1a5-1989d83d0322",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7083d7ab-5709-4e6a-b333-f2f6ad7be68c",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 850,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0577ca4f-f6d2-4541-8e85-a77c78c60d11","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b6e66155-dc45-4e7f-8237-6d012b57421e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"61b883e1-39fc-4f2c-a1a5-1989d83d0322","path":"sprites/Portrait_Liz/Portrait_Liz.yy",},},},"Disabled":false,"id":"1991cd0b-2b79-4f7d-99d2-a5e577f4df57","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7083d7ab-5709-4e6a-b333-f2f6ad7be68c","path":"sprites/Portrait_Liz/Portrait_Liz.yy",},},},"Disabled":false,"id":"3a3e35a6-249f-46a2-a40f-9b0f5264f2ad","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

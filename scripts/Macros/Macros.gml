@@ -3,10 +3,10 @@
 	#macro CHAR_MIGUEL		1
 	#macro CHAR_VIKTOR		2
 	#macro CHAR_HIGHLANDER	3
-	#macro CHAR_RANIA		4
+	#macro CHAR_LIZ			4
 	#macro CHAR_NATSU		5
 	#macro CHAR_LEON		6
-	#macro CHAR_LIZ			7
+	#macro CHAR_RANIA		7
 	#macro CHAR_CHOCLO		8
 	#macro CHAR_KAIDA		9
 	#macro CHAR_SETH		10
@@ -41,7 +41,7 @@
 	#macro THROW_FORWARD	0
 	#macro THROW_BACKWARD	1
 	
-	#macro MAX_HP			200
+	#macro MAX_HP			100
 #endregion
 
 #region //Controllers

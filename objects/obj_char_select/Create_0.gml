@@ -1,14 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+global.game_type = GAME_P1vP2
+global.enemy_type = CONT_P2
+
+window_set_fullscreen(true)
+
 names = [
 			"Ranjit",
 			"Miguel",
 			"Viktor",
 			"Highlander",
-			"Rania",
+			"Liz",
 			"Natsu",
 			"Leon",
-			"Liz",
+			"Rania",
 			"Cho-Clo",
 			"Kaida",
 			"Seth",
@@ -20,10 +26,10 @@ icons = [
 			Icon_Miguel,
 			Icon_Viktor,
 			Icon_Highlander,
-			Icon_Rania,
+			Icon_Liz,
 			Icon_Natsu,
 			Icon_Leon,
-			Icon_Liz,
+			Icon_Rania,
 			Icon_ChoClo,
 			Icon_Kaida,
 			Icon_Seth,
@@ -34,10 +40,10 @@ portraits = [
 				Portrait_Miguel,
 				Portrait_Viktor,
 				Portrait_Highlander,
-				Portrait_Rania,
+				Portrait_Liz,
 				Portrait_Natsu,
 				Portrait_Leon,
-				Portrait_Liz,
+				Portrait_Rania,
 				Portrait_ChoClo,
 				Portrait_Kaida,
 				Portrait_Seth,

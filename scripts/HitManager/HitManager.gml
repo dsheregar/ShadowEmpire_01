@@ -228,7 +228,7 @@ function HitManager(){
 		break
 		
 		case STATE_THROW:
-			RenderHit(throw_indexes[throw_dir], x_hitbox, y_hitbox, 7, self, noone, x_scale, y_scale, angle)
+			RenderHit(throw_indexes[throw_dir], x_hitbox, y_hitbox, 10, self, noone, x_scale, y_scale, angle)
 		break
 		
 		
