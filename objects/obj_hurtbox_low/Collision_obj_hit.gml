@@ -32,7 +32,7 @@ if owner.state == STATE_BLOCK
 
 //Take damage
 owner.last_hit_id = other._id
-audio_play_sound(AttackLanded, 0, false); 
+audio_play_sound(AttackLanded, 0, false, 4); 
 
 if owner.image_xscale == 1
 	instance_create_layer(other.x+10, other.y, "Effects", obj_normalpuncheffect_player2)
@@ -52,7 +52,7 @@ switch (other.effect)
 	
 	case EFF_KNOCKUP:
 		owner.vspd = JUMP_FORCE
-		owner.hspd = -2 * sign(owner.image_xscale)
+		owner.hspd = -1 * sign(owner.image_xscale)
 		owner.dmg_state = EFF_KNOCKUP
 	break
 	
@@ -68,7 +68,7 @@ switch (other.effect)
 	break
 	
 	case EFF_PUSHBACK:
-		owner.hspd = -5 * sign(owner.image_xscale)
+		owner.hspd = -2 * sign(owner.image_xscale)
 		owner.dmg_state = EFF_PUSHBACK
 	break
 }

@@ -22,7 +22,7 @@ function HandleSprites(){
 		sp_ko = Ranjit_Knockout
 		
 		sp_attack = [Ranjit_LeftPunch, Ranjit_RightPunch, Ranjit_LeftKick, Ranjit_RightKick]
-		attack_indexes = [[2], [2], [7], [5]]
+		attack_indexes = [[2], [2], [4], [2]]
 		sp_attack_duck = [Ranjit_LowLeftPunch, Ranjit_LowRightPunch, Ranjit_LowLeftKick, Ranjit_LowRightKick]
 		attack_duck_indexes = [[2], [2], [2], [2]]
 		
@@ -141,7 +141,7 @@ function HandleSprites(){
 		sp_throw = [Ranjit_ThrowForward, Ranjit_ThrowBackward]
 		throw_indexes = [[4], [4]]
 		
-		sp_hurt_u = Ranjit_HurtHead
+		sp_hurt_u = Liz_HurtHead
 		sp_ko = Ranjit_Knockout
 		
 		sp_attack = [Liz_LeftPunch, Liz_RightPunch, Liz_LeftKick, Liz_RightKick]
@@ -149,8 +149,8 @@ function HandleSprites(){
 		sp_attack_duck = [Liz_LowLeftPunch, Liz_LowRightPunch, Liz_LowLeftKick, Liz_LowRightKick]
 		attack_duck_indexes = [[2], [3, 11], [2], [2]]
 		
-		sp_hurt = [Ranjit_HurtHead, Ranjit_HurtMid, Ranjit_HurtLow]
-		sp_hurt_duck = Ranjit_HurtDuck
+		sp_hurt = [Liz_HurtHead, Liz_HurtBody, Liz_HurtLow]
+		sp_hurt_duck = Liz_HurtDuck
 		
 		head_slammer_index = [4]
 		aerial_roundhouse_index = [3]

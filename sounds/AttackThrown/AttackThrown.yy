@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "AttackThrown.wav",
   "type": 1,
-  "volume": 0.25,
+  "volume": 1.0,
 }

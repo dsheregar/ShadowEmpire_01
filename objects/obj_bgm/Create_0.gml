@@ -9,7 +9,7 @@ switch(room_get_name(room))
 	break
 	
 	case "rm_char_select":
-		audio_play_sound(MiyagiMagic, 0, true)
+		audio_play_sound(MiyagiMagic, 0, true, 2)
 	break
 	
 	case "rm_kambalaBackground":

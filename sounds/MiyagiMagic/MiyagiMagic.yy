@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "MiyagiMagic.wav",
   "type": 1,
-  "volume": 0.2,
+  "volume": 1.0,
 }

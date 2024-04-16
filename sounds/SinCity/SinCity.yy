@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "SinCity.mp3",
   "type": 1,
-  "volume": 0.1,
+  "volume": 1.0,
 }

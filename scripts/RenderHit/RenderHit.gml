@@ -8,7 +8,7 @@ function RenderHit(){
 			{
 				//Create hit
 				if (audio_is_playing(AttackThrown) == false)
-					audio_play_sound(AttackThrown, 0, false)
+					audio_play_sound(AttackThrown, 0, false, 2)
 					
 				var h = CreateHit(argument4, argument5, argument3, argument1, argument2)
 				

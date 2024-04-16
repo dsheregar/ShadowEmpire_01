@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "KambalaBGM.wav",
   "type": 1,
-  "volume": 0.25,
+  "volume": 1.0,
 }

@@ -6,6 +6,9 @@ function CharacterControl(){
 	var backward_key = sign(image_xscale != 1)?right:left
 	var backward_key_gp = sign(image_xscale != 1)?gp_padr:gp_padl
 	
+	if kcp(vk_escape)
+		room_goto(0)
+	
 	switch (state){
 		case STATE_FREE:
 			//For the State Free state, move the character freely with its default animations
@@ -156,7 +159,7 @@ function CharacterControl(){
 			{
 				vspd += 0.05
 				if dmg_state == EFF_NONE
-					hspd = -3 * sign(image_xscale)
+					hspd = -1.5 * sign(image_xscale)
 				if image_index >= 10 and (dmg_state == EFF_KNOCKBACK || dmg_state == EFF_KNOCKUP)
 					hspd = 0
 				if AnimEnd()

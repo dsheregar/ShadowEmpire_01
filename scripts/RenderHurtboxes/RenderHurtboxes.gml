@@ -1681,6 +1681,182 @@ function RenderHurtboxes(){
 		}
 	}
 	
+	if character == CHAR_LIZ
+	{
+		switch (state)
+		{
+			case STATE_FREE:
+				if landed
+				{
+					if !duck
+					{
+						head.image_xscale = 20 * sign(image_xscale)
+						head.image_yscale = 25
+						head.xOffset = -10 * sign(image_xscale)
+						head.yOffset = -158
+				
+						body.image_xscale = 30 * sign(image_xscale)
+						body.image_yscale = 50
+						body.xOffset = -15 * sign(image_xscale)
+						body.yOffset = -135
+				
+						low.image_xscale = 40 * sign(image_xscale)
+						low.image_yscale = 50
+						low.xOffset = 0 * sign(image_xscale)
+						low.yOffset = -85
+					}
+					else
+					{
+						head.image_xscale = 20
+						head.image_yscale = 20
+						head.xOffset = -17
+						head.yOffset = -120
+				
+						body.image_xscale = 60
+						body.image_yscale = 50
+						body.xOffset = -37
+						body.yOffset = -105
+				
+						low.image_xscale = 80
+						low.image_yscale = 30
+						low.xOffset = -47
+						low.yOffset = -55
+					}
+				}
+				else
+				{
+					
+				}
+			break
+			
+			case STATE_ATTACK:
+				head.image_xscale = 20 * sign(image_xscale)
+				head.image_yscale = 25
+				head.xOffset = -10 * sign(image_xscale)
+				head.yOffset = -158
+				
+				body.image_xscale = 30 * sign(image_xscale)
+				body.image_yscale = 50
+				body.xOffset = -15 * sign(image_xscale)
+				body.yOffset = -135
+				
+				low.image_xscale = 40 * sign(image_xscale)
+				low.image_yscale = 50
+				low.xOffset = 0 * sign(image_xscale)
+				low.yOffset = -85
+			break
+			
+			case STATE_HURT:
+				switch(dmg_state)
+				{
+					case EFF_KNOCKUP:
+						if image_index < 9
+						{
+							head.image_xscale = 25
+							head.image_yscale = 25
+							head.xOffset = 45
+							head.yOffset = -120
+				
+							body.image_xscale = 40
+							body.image_yscale = 30
+							body.xOffset = 5
+							body.yOffset = -120
+				
+							low.image_xscale = 50
+							low.image_yscale = 30
+							low.xOffset = -50
+							low.yOffset = -115
+						} else if ((image_index > 9) && (image_index < 18))
+						{
+							head.image_xscale = 25
+							head.image_yscale = 25
+							head.xOffset = 55
+							head.yOffset = -50
+				
+							body.image_xscale = 40
+							body.image_yscale = 30
+							body.xOffset = 5
+							body.yOffset = -60
+				
+							low.image_xscale = 50
+							low.image_yscale = 30
+							low.xOffset = -50
+							low.yOffset = -60
+						} else
+						{
+							head.image_xscale = 20
+							head.image_yscale = 20
+							head.xOffset = -17
+							head.yOffset = -120
+				
+							body.image_xscale = 60
+							body.image_yscale = 50
+							body.xOffset = -37
+							body.yOffset = -105
+				
+							low.image_xscale = 80
+							low.image_yscale = 30
+							low.xOffset = -47
+							low.yOffset = -55
+						}
+					break
+					
+					case EFF_KNOCKBACK:
+						if image_index < 9
+						{
+							head.image_xscale = 25
+							head.image_yscale = 25
+							head.xOffset = 45
+							head.yOffset = -120
+				
+							body.image_xscale = 40
+							body.image_yscale = 30
+							body.xOffset = 5
+							body.yOffset = -120
+				
+							low.image_xscale = 50
+							low.image_yscale = 30
+							low.xOffset = -50
+							low.yOffset = -115
+						} else if ((image_index > 9) && (image_index < 18))
+						{
+							head.image_xscale = 25
+							head.image_yscale = 25
+							head.xOffset = 55
+							head.yOffset = -50
+				
+							body.image_xscale = 40
+							body.image_yscale = 30
+							body.xOffset = 5
+							body.yOffset = -60
+				
+							low.image_xscale = 50
+							low.image_yscale = 30
+							low.xOffset = -50
+							low.yOffset = -60
+						} else
+						{
+							head.image_xscale = 20
+							head.image_yscale = 20
+							head.xOffset = -17
+							head.yOffset = -120
+				
+							body.image_xscale = 60
+							body.image_yscale = 50
+							body.xOffset = -37
+							body.yOffset = -105
+				
+							low.image_xscale = 80
+							low.image_yscale = 30
+							low.xOffset = -47
+							low.yOffset = -55
+						}
+					break
+				}
+			break
+		}
+	}
+	
 	with(head)
 	{
 		x = other.x + xOffset
