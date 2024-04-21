@@ -133,21 +133,21 @@ function HandleSprites(){
 		sp_fall = Liz_Idle
 		sp_jump = Liz_Idle
 		sp_duck = Liz_Duck
-		sp_block = Ranjit_Block
-		sp_block_duck = Ranjit_BlockDuck
-		sp_sprinting = Ranjit_Sprinting
-		sp_backstep = Ranjit_Backstep
+		sp_block = Liz_Block
+		sp_block_duck = Liz_BlockDuck
+		sp_sprinting = Liz_Frontstep
+		sp_backstep = Liz_Backstep
 		
-		sp_throw = [Ranjit_ThrowForward, Ranjit_ThrowBackward]
-		throw_indexes = [[4], [4]]
+		sp_throw = [Liz_ThrowForward, Liz_ThrowBackward]
+		throw_indexes = [[5], [10]]
 		
 		sp_hurt_u = Liz_HurtHead
-		sp_ko = Ranjit_Knockout
+		sp_ko = Liz_Knockout
 		
 		sp_attack = [Liz_LeftPunch, Liz_RightPunch, Liz_LeftKick, Liz_RightKick]
-		attack_indexes = [[2], [3], [3], [6, 15]]
+		attack_indexes = [[1], [2], [2], [5, 14]]
 		sp_attack_duck = [Liz_LowLeftPunch, Liz_LowRightPunch, Liz_LowLeftKick, Liz_LowRightKick]
-		attack_duck_indexes = [[2], [3, 11], [2], [2]]
+		attack_duck_indexes = [[1], [2, 10], [1], [1]]
 		
 		sp_hurt = [Liz_HurtHead, Liz_HurtBody, Liz_HurtLow]
 		sp_hurt_duck = Liz_HurtDuck

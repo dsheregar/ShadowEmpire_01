@@ -53,11 +53,11 @@ last_key_cd++
 last_key_cd_gp++
 
 //Test Environment
-state = STATE_FREE
-//image_index = 1 //To freeze each frame
+state = STATE_THROW
+//image_index = 13 //To freeze each frame
 landed = 1
-duck = 0
+duck = 1
 atk_type = 0
-throw_dir = 0
+throw_dir = 1
 dmg_state = EFF_NONE
 where_hurt = 0

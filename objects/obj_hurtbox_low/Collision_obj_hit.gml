@@ -16,13 +16,13 @@ if owner.last_hit_id == other._id
 //Block?
 if (kc(backward_key) or gc(backward_key_gp)) and owner.landed and owner.state = STATE_FREE
 {
-	if owner.duck
+	if owner.duck //player is ducking
 		owner.state = STATE_BLOCK
 	else
 	{
-		if other.low
+		if owner.opponent.duck //player is standing and hit low
 			owner.state = STATE_HURT
-		else
+		else //player is standing and hit anywhere
 			owner.state = STATE_BLOCK
 	}
 }

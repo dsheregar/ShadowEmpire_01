@@ -10,7 +10,7 @@ function HitManager(){
 	
 	#region
 		
-		//Ranjit Hitboxes
+		//Hitboxes
 		if character == CHAR_RANJIT
 		{
 			switch (state)
@@ -205,6 +205,101 @@ function HitManager(){
 			}
 		}
 		
+		if character == CHAR_LIZ
+		{
+			switch (state)
+			{
+				case STATE_ATTACK:
+					switch (atk_type)
+					{
+						case ATK_LP:
+							x_hitbox = 40*sign(image_xscale)
+							y_hitbox = 137
+							x_scale = 5.5*sign(image_xscale)
+							y_scale = 1.5
+						break
+					
+						case ATK_RP:
+							x_hitbox = 30*sign(image_xscale)
+							y_hitbox = 145
+							x_scale = 6.5*sign(image_xscale)
+							y_scale = 2.5
+						break
+					
+						case ATK_LK:
+							x_hitbox = 25*sign(image_xscale)
+							y_hitbox = 100
+							x_scale = 3*sign(image_xscale)
+							y_scale = 6.5
+							angle = 70*sign(image_xscale)
+						break
+					
+						case ATK_RK:
+							x_hitbox = 20*sign(image_xscale)
+							y_hitbox = 80
+							x_scale = 3.5*sign(image_xscale)
+							y_scale = 8
+							angle = -65*sign(image_xscale)
+						break
+					}
+				break
+				
+				case STATE_ATTACK_DUCK:
+					switch (atk_type)
+					{
+						case ATK_LP:
+							x_hitbox = 5*sign(image_xscale)
+							y_hitbox = 110
+							x_scale = 9*sign(image_xscale)
+							y_scale = 2
+							angle = 60*sign(image_xscale)
+						break
+					
+						case ATK_RP:
+							x_hitbox = 35*sign(image_xscale)
+							y_hitbox = 110
+							x_scale = 5*sign(image_xscale)
+							y_scale = 10.5
+						break
+					
+						case ATK_LK:
+							x_hitbox = 25*sign(image_xscale)
+							y_hitbox = 100
+							x_scale = 3.7*sign(image_xscale)
+							y_scale = 8.2
+							angle = -45*sign(image_xscale)
+						break
+					
+						case ATK_RK:
+							x_hitbox = 40*sign(image_xscale)
+							y_hitbox = 75
+							x_scale = 1.5*sign(image_xscale)
+							y_scale = 5.5
+							angle = -60*sign(image_xscale)
+						break
+					}
+				break
+				
+				case STATE_THROW:
+					switch (throw_dir)
+					{
+						case THROW_FORWARD:
+							x_hitbox = 47*sign(image_xscale)
+							y_hitbox = 145
+							x_scale = 3.5*sign(image_xscale)
+							y_scale = 3
+						break
+						case THROW_BACKWARD:
+							x_hitbox = 35*sign(image_xscale)
+							y_hitbox = 135
+							x_scale = 5.5*sign(image_xscale)
+							y_scale = 1
+						break
+					}
+				break
+			}
+		}
+
 
 	#endregion
 	
