@@ -4,11 +4,15 @@
 switch(room_get_name(room))
 {
 	case "rm_main_menu":
-		audio_stop_sound(SinCity)
+		audio_stop_sound(MainMenu)
 	break
 	
 	case "rm_char_select":
-		audio_stop_sound(MiyagiMagic)
+		//audio_stop_sound(CharSelect)
+	break
+	
+	case "rm_background_select":
+		audio_stop_sound(CharSelect)
 	break
 	
 	case "rm_kambalaBackground":

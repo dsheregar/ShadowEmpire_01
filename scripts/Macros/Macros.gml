@@ -1,3 +1,11 @@
+#region //Menu Sprites
+	#macro MENU01			0
+	#macro MENU02			1
+	#macro MENU03			2
+	#macro MENU04			3
+	#macro MENU05			4
+#endregion
+
 #region //Characters
 	#macro CHAR_RANJIT		0
 	#macro CHAR_MIGUEL		1

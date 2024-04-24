@@ -29,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "P1vsCOM",
+    "path": "sprites/P1vsCOM/P1vsCOM.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

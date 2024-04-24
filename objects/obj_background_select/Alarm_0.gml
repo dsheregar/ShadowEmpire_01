@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto((global.background + 2))
+room_goto((global.background + 3))

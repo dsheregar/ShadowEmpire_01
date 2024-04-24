@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "Training",
-  "bbox_bottom": 299,
+  "bbox_bottom": 269,
   "bbox_left": 0,
-  "bbox_right": 999,
+  "bbox_right": 479,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9b86735-29ec-4a8d-9741-ae81618f1f30",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11a2de3e-24dd-46f0-b8ae-5716eb51e7f8",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 300,
+  "height": 270,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"98f7a96a-bc85-4612-9a56-fe015335dec7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9f7bf176-6ba5-44b2-8743-e81797155d14","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b9b86735-29ec-4a8d-9741-ae81618f1f30","path":"sprites/Training/Training.yy",},},},"Disabled":false,"id":"e052b4c9-776f-48db-a0ca-5c2e9098b038","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"11a2de3e-24dd-46f0-b8ae-5716eb51e7f8","path":"sprites/Training/Training.yy",},},},"Disabled":false,"id":"83e13add-68f8-42e5-926b-4a860b970c40","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1000,
+  "width": 480,
 }

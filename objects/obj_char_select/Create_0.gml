@@ -4,7 +4,7 @@
 global.game_type = GAME_P1vP2
 global.enemy_type = CONT_P2
 
-window_set_fullscreen(true)
+//window_set_fullscreen(true)
 
 names = [
 			"Ranjit",
