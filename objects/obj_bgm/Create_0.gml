@@ -9,7 +9,7 @@ switch(room_get_name(room))
 	break
 	
 	case "rm_char_select":
-		audio_play_sound(CharSelect, 0, true, 2)
+		audio_play_sound(CharSelect, 0, true)
 	break
 	
 	case "rm_background_select":

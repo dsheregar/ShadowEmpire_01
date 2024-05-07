@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 var width = room_width - 116
-//draw_set_font(fnt_main)
+draw_set_font(FightingFont_MainMenu)
 draw_set_halign(fa_center)
 draw_set_color(c_red)
-draw_text(width , 350, "Character select")
+draw_text(width , 300, "Character select")
 
 var second_char = (global.game_type == GAME_P1vP2)?p2_index:com_index
 
@@ -23,15 +23,15 @@ for (var i = 0; i < MAX_CHARS; i++)
 	{
 		if (i <= MAX_CHARS/2-1)
 		{
-			draw_set_color(c_red)
+			draw_set_color(!p1_ready?c_red:c_white)
+			draw_set_font(FightingFont_Index)
 			draw_text(471+71*i+32, 380, "P1")
-			draw_set_color(c_white)
 		}
 		else
 		{
-			draw_set_color(c_red)
+			draw_set_color(!p1_ready?c_red:c_white)
+			draw_set_font(FightingFont_Index)
 			draw_text(471+71*i+32 - 426, 505, "P1")
-			draw_set_color(c_white)
 		}
 	}
 	
@@ -39,15 +39,15 @@ for (var i = 0; i < MAX_CHARS; i++)
 	{
 		if (i <= MAX_CHARS/2-1)
 		{
-			draw_set_color(c_blue)
-			draw_text(471+71*i+32, 470, (global.game_type == GAME_P1vP2)?"P2":"COM")
-			draw_set_color(c_white)
+			draw_set_color(!p2_ready?c_blue:c_white)
+			draw_set_font(FightingFont_Index)
+			draw_text(471+71*i+32, 480, (global.game_type == GAME_P1vP2)?"P2":"COM")
 		}
 		else
 		{
-			draw_set_color(c_blue)
-			draw_text(471+71*i+32 - 427, 595, (global.game_type == GAME_P1vP2)?"P2":"COM")
-			draw_set_color(c_white)
+			draw_set_color(!p2_ready?c_blue:c_white)
+			draw_set_font(FightingFont_Index)
+			draw_text(471+71*i+32 - 427, 605, (global.game_type == GAME_P1vP2)?"P2":"COM")
 		}
 	}
 }

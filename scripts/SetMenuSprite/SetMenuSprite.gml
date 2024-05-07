@@ -9,6 +9,7 @@ function SetMenuSprite(){
 		
 		case MENU02:
 			sprite_index = P1vsP2
+			FreezeLastFrame()
 		break
 		
 		case MENU03:

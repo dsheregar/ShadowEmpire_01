@@ -9,6 +9,7 @@ if alarm[0] < 0
 {
 	if (kcp(ord("D")) || gamepad_button_check_pressed(0,gp_padr))
 	{
+		audio_play_sound(MoveBetweenOptions, 0, false)
 		if !p1_ready
 		{
 			if p1_index == 11
@@ -26,6 +27,7 @@ if alarm[0] < 0
 	}
 	if (kcp(ord("A")) || gamepad_button_check_pressed(0,gp_padl))
 	{
+		audio_play_sound(MoveBetweenOptions, 0, false)
 		if !p1_ready
 		{
 			if p1_index == 0
@@ -43,6 +45,7 @@ if alarm[0] < 0
 	}
 	if (kcp(ord("W")) || gamepad_button_check_pressed(0,gp_padu))
 	{
+		audio_play_sound(MoveBetweenOptions, 0, false)
 		if !p1_ready
 		{
 			if p1_index < 6
@@ -60,6 +63,7 @@ if alarm[0] < 0
 	}
 	if (kcp(ord("S")) || gamepad_button_check_pressed(0,gp_padd))
 	{
+		audio_play_sound(MoveBetweenOptions, 0, false)
 		if !p1_ready
 		{
 			if p1_index >= 6
@@ -77,6 +81,7 @@ if alarm[0] < 0
 	}
 	if kcp(ord("J")) || gamepad_button_check_pressed(0,gp_face1)
 	{
+		audio_play_sound(Select, 0, false)
 		if global.game_type == GAME_P1vAI
 		{
 			if !p1_ready
@@ -106,6 +111,7 @@ if global.game_type = GAME_P1vP2
 	{
 		if (kcp(vk_right) || gamepad_button_check_pressed(1,gp_padr))
 		{
+			audio_play_sound(MoveBetweenOptions, 0, false)
 			if p2_index == 11
 				p2_index = p2_index
 			else
@@ -114,6 +120,7 @@ if global.game_type = GAME_P1vP2
 
 		if (kcp(vk_left) || gamepad_button_check_pressed(1,gp_padl))
 		{
+			audio_play_sound(MoveBetweenOptions, 0, false)
 			if p2_index == 0
 				p2_index = p2_index
 			else
@@ -122,6 +129,7 @@ if global.game_type = GAME_P1vP2
 		
 		if (kcp(vk_up) || gamepad_button_check_pressed(1,gp_padu))
 		{
+			audio_play_sound(MoveBetweenOptions, 0, false)
 			if p2_index < 6
 				p2_index = p2_index
 			else
@@ -130,6 +138,7 @@ if global.game_type = GAME_P1vP2
 
 		if (kcp(vk_down) || gamepad_button_check_pressed(1,gp_padd))
 		{
+			audio_play_sound(MoveBetweenOptions, 0, false)
 			if p2_index >= 6
 				p2_index = p2_index
 			else
@@ -138,6 +147,7 @@ if global.game_type = GAME_P1vP2
 
 		if (kcp(vk_numpad1) || gamepad_button_check_pressed(1,gp_face1))
 		{
+			audio_play_sound(Select, 0, false)
 			p2_ready = true
 			global.p2_char = p2_index
 		}

@@ -73,8 +73,8 @@ function HandleSprites(){
 		sp_duck = Viktor_Duck
 		sp_block = Viktor_Block
 		sp_block_duck = Viktor_BlockDuck
-		sp_sprinting = Ranjit_Sprinting
-		sp_backstep = Ranjit_Idle
+		sp_sprinting = Viktor_FrontStep
+		sp_backstep = Viktor_Backstep
 		
 		sp_throw = [Viktor_ThrowForward, Ranjit_ThrowBackward]
 		throw_indexes = [[4], [4]]
@@ -84,7 +84,7 @@ function HandleSprites(){
 		
 		sp_attack = [Viktor_LeftPunch, Viktor_RightPunch, Viktor_LeftKick, Viktor_RightKick]
 		attack_indexes = [[0], [2], [0], [0]]
-		sp_attack_duck = [Viktor_LowLeftPunch, Viktor_LowRightPunch, Ranjit_LowLeftKick, Ranjit_LowRightKick]
+		sp_attack_duck = [Viktor_LowLeftPunch, Viktor_LowRightPunch, Viktor_LowLeftKick, Viktor_LowRightKick]
 		attack_duck_indexes = [[1], [1], [2], [2]]
 		
 		sp_hurt = [Viktor_HurtHead, Viktor_LeftPunch, Viktor_LeftPunch]
